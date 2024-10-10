@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import story from '../bg_img.jpeg'
+import story from '../assets/about-us.jpg'
 
 const About = () => {
   return (
@@ -14,17 +14,11 @@ const About = () => {
         <div className='grid grid-cols-8 gap-6 plavce-items-center' >
             <div className='w-full col-span-4 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
-                <div className='flex flex-row p-4'>
-                    <Image src={story} alt='book' className='w-max-[400px] h-auto' />
+                <div className='flex flex-col p-4 h-auto items-center justify-center' >
+                    <Image src={story} alt='' className='w-full h-[440px]' />
                      
                 </div>
-                <div className='flex flex-col mt-4 p-4'>
-                        {/* <h2 className='text-2xl font-bold text-white/80'>EcomPlanet is your trusted partner in transitioning from offline 
-                        to online selling, offering end-to-end solutions that simplify the complexities of e-commerce. 
-                        We provide tailor-made services to meet each seller’s 
-                        unique needs, ensuring a hassle-free experience and empowering businesses to thrive in the digital marketplace.</h2> */}
-                        {/* <p className='text-lg text-white/70 mt-2'> We handle registrations on all major e-commerce platforms for you, hassle-free.</p> */}
-                    </div>
+        
             </div>
 
             <div className='w-full col-span-4 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
