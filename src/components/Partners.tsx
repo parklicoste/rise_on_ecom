@@ -26,7 +26,7 @@ const Partners = () => {
                     <div key={index}
                     className='h-[160px] w-[160px] md:h-[220px] md:w-[220px] flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl '>
                         {partner.icon}
-                        <h2 className='mt-2 font-semibold'> {partner.label} </h2>
+                        {/* <h2 className='mt-2 font-semibold'> {partner.label} </h2> */}
                     </div>
                 ))}
             </div>
