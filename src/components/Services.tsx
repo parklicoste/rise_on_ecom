@@ -1,8 +1,15 @@
 
 import React from 'react'
 import Image from 'next/image'
-import book from '../assets/book.png'
-import finance from '../assets/finance.png'
+import ecom from '../assets/ecom-registration.png'
+import finance from '../assets/financial-management.png'
+import food from '../assets/food-vendor-management.png'
+import product from '../assets/product-lisitng.png'
+import inventory from '../assets/inventory-managment.png'
+import review from '../assets/reveiw-managment.png'
+import social from '../assets/social-media-managment.png'
+import visual from '../assets/visual-design.png'
+import website from '../assets/website-development.png'
 
 const Services = () => {
   return (
@@ -15,7 +22,7 @@ const Services = () => {
             <div className='w-full col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
-                    <Image src={book} alt='book' className='w-auto h-[130px]' />
+                    <Image src={ecom} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>E-Commerce Platform Registration</h2>
                         <p className='text-lg text-white/70 mt-2'> We handle registrations on all major e-commerce platforms for you, hassle-free.</p>
@@ -26,7 +33,7 @@ const Services = () => {
             <div className='w-full col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
                 <div className='absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy'></div>
                 <div className='flex flex-row p-6'>
-                    <Image src={book} alt='book' className='w-auto h-[130px]' />
+                    <Image src={product} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Multi-Category Product Listings</h2>
                         <p className='text-lg text-white/70 mt-2'> Get your products listed in multiple categories, across all e-commerce channels.</p>
@@ -38,7 +45,7 @@ const Services = () => {
             <div className='w-full col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
-                    <Image src={book} alt='book' className='w-auto h-[130px]' />
+                    <Image src={visual} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Product Photography & Visual Design</h2>
                         <p className='text-lg text-white/70 mt-2'> High-quality shoots and custom graphics to make your listings stand out.</p>
@@ -49,7 +56,7 @@ const Services = () => {
             <div className='w-full col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
-                    <Image src={book} alt='book' className='w-auto h-[130px]' />
+                    <Image src={review} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Ratings & Reviews Management</h2>
                         <p className='text-lg text-white/70 mt-2'>Generate, track, and manage reviews to build customer trust and loyalty.</p>
@@ -60,7 +67,7 @@ const Services = () => {
             <div className='w-full col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div> 
                 <div className='flex flex-row p-6'>
-                    <Image src={book} alt='book' className='w-auto h-[130px]' />
+                    <Image src={inventory} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Inventory & Warehouse Optimization</h2>
                         <p className='text-lg text-white/70 mt-2'>  Set up and manage your inventory with efficient, scalable warehouse options.</p>
@@ -81,7 +88,7 @@ const Services = () => {
             <div className='w-full col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
-                    <Image src={book} alt='book' className='w-auto h-[130px]' />
+                    <Image src={social} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Social Media & Storefront Management</h2>
                         <p className='text-lg text-white/70 mt-2'> Launch and manage your social media pages and online stores with ease.</p>
@@ -91,7 +98,7 @@ const Services = () => {
             <div className='w-full col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
-                    <Image src={book} alt='book' className='w-auto h-[130px]' />
+                    <Image src={website} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Custom ECommerce Website Development</h2>
                         <p className='text-lg text-white/70 mt-2'> Build and maintain a branded e-commerce site tailored to your needs.</p>
@@ -101,7 +108,7 @@ const Services = () => {
             <div className='w-full col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
-                    <Image src={book} alt='book' className='w-auto h-[130px]' />
+                    <Image src={food} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Food Vendor Onboarding & Management</h2>
                         <p className='text-lg text-white/70 mt-2'> Complete onboarding and management for food vendors on delivery platforms.</p>
