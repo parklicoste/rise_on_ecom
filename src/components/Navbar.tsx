@@ -1,8 +1,6 @@
 'use client'
 
 import React, {useState, useEffect} from "react";
-// import {useRouter, usePathname} from 'next/navigation'
-import { button } from "framer-motion/client";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -13,12 +11,10 @@ import { AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 const Navbar = () => {
 
     const [nav, setNav] = useState(false);
-    const [navBg, setNavBg] = useState('#ecf0f3');
-    const [linkColor, setLinkColor] = useState('#1f2937');
 
 
     const navLinks = [
-        {title: 'About', path : '#about'},
+        {title: 'About Us', path : '#about'},
         {title: 'Services', path : '#services'}
     ]
 
