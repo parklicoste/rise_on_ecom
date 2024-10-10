@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Image from 'next/image'
 import book from '../assets/book.png'
@@ -5,11 +6,11 @@ import finance from '../assets/finance.png'
 
 const Services = () => {
   return (
-    <div className='max-w-[1200px] mx-auto' id='about'>
+    <div className='max-w-[1200px] mx-auto' id='services'>
         <h1 className='text-white text-6xl max-w-[320px] font-semibold mx-auto text-center mb-4 p-4'>
              <span className="text-orange-400">Services</span>
         </h1>
-        <div className='grid grid-cols-8 gap-6 place-items-center' >
+        <div className='grid grid-cols-8 gap-6 plavce-items-center' >
 
             <div className='w-full col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
