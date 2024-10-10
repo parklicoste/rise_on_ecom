@@ -7,12 +7,13 @@ const About = () => {
     <div className='max-w-[1200px] mx-auto' id='about'>
 
         <h1 className='text-white text-6xl max-w-[320px] font-semibold mx-auto text-center mb-4 p-4'>
-            About <span className="text-orange-400">Us</span>
+            About Us
+            {/* <span className="text-orange-400">Us</span> */}
         </h1>
 
         <div className='grid grid-cols-8 gap-6 plavce-items-center' >
             <div className='w-full col-span-4 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-4'>
                     <Image src={story} alt='book' className='w-max-[400px] h-auto' />
                      
@@ -27,11 +28,11 @@ const About = () => {
             </div>
 
             <div className='w-full col-span-4 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
-                <div className='absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy'></div>
+                <div className='absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy'></div>
                 <div className='flex flex-row p-4'>
                     
                     <div className='flex flex-col'>
-                        <h2 className='text-2xl font-bold text-white/80'>EcomPlanet is your trusted partner in transitioning from offline 
+                        <h2 className='text-xl font-bold text-white/80'>EcomPlanet is your trusted partner in transitioning from offline 
                         to online selling, offering end-to-end solutions that simplify the complexities of e-commerce. 
                         We provide tailor-made services to meet each seller’s 
                         unique needs, ensuring a hassle-free experience and empowering businesses to thrive in the digital marketplace.</h2>
@@ -49,11 +50,11 @@ const About = () => {
             </div>
         </div>
         <h2 className='text-white text-2xl max-w-[320px] font-semibold mx-auto text-center mb-4 p-4'>
-            What sets <span className="text-orange-400">Us</span> apart
+            What sets us apart
         </h2>
         <div className='grid grid-cols-10 gap-6 plavce-items-center' >
             <div className='w-full col-span-2 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
             
                     <div className='flex flex-col mt-4 h-[180px]'>
@@ -66,7 +67,7 @@ const About = () => {
             
 
             <div className='w-full col-span-2 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden h-auto'>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
                     <div className='flex flex-col mt-4 h-[180px]'>
                         <h2 className='text-xl font-bold text-white/80'>Comprehensive Solutions</h2>
@@ -76,31 +77,31 @@ const About = () => {
             </div>
 
             <div className='w-full col-span-2 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden '>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
                     <div className='flex flex-col mt-4 h-[180px]'>
                         <h2 className='text-xl font-bold text-white/80'>Growth-Focused</h2>
-                        <p className='text-lg text-white/70 mt-2'> We handle registrations on all major e-commerce platforms for you, hassle-free.</p>
+                        <p className='text-lg text-white/70 mt-2'> We handle registrations on all major e&#8209;commerce platforms for you, hassle-free.</p>
                     </div>
                 </div>
             </div>
 
             <div className='w-full col-span-2 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
                     <div className='flex flex-col mt-4 h-[180px]'>
                         <h2 className='text-xl font-bold text-white/80'>Educational Approach</h2>
-                        <p className='text-lg text-white/70 mt-2'> Providing resources to empower sellers in mastering e-commerce.</p>
+                        <p className='text-lg text-white/70 mt-2'> Providing resources to empower sellers  in mastering e&#8209;commerce.</p>
                     </div>
                 </div>
             </div>
 
             <div className='w-full col-span-2 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
                     <div className='flex flex-col mt-4 h-[180px]'>
                         <h2 className='text-xl font-bold text-white/80'>Reliability & Innovation</h2>
-                        <p className='text-lg text-white/70 mt-2'> We promise transparency, care, and cutting-edge expertise.</p>
+                        <p className='text-lg text-white/70 mt-2'> We promise transparency, care, and cuttinge&#8209;edge expertise.</p>
                     </div>
                 </div>
             </div>

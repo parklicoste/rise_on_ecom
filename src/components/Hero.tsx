@@ -9,7 +9,7 @@ import profilepic from '../assets/profilepic.png'
 
 const Hero = () => {
   return (
-    <div className="py-24 relative overflow-clip bg-[linear-gradient(to_bottom,#000,#2B1942_35%,#8F5C55_60%,#DBAF6E_80%)]">
+    <div className="py-24 relative overflow-clip bg-[linear-gradient(to_bottom,#000,#2857CE_35%,#1BB2ED_60%,#67D3F4_80%)]">
         
         <div className='absolute rounded-[50%] w-[3000px] h-[1300px] bg-black top-[500px] left-[50%] -translate-x-1/2
         bg-[radial-gradient(closest-side,#000_80%,#2B1942)]'>
@@ -17,16 +17,16 @@ const Hero = () => {
         </div>
         <div className='relative'>
             <div className='text-4xl font-bold text-center'>
-                <h1 className='text-8xl text-[#98B4CE]'>Rise On Ecom</h1>
-                <h1 className='text-[#E48A57]'>Simplifying commerce & Scaling beyond limits</h1>
+                <h1 className='text-6xl text-[#fff]'>Rise On Ecom</h1>
+                <h1 className='text-[#fff] text-5xl mt-4'>Simplifying commerce & Scaling beyond limits</h1>
 
             </div>
-            <motion.div className="absolute left-[100px] top-[00px]" 
+            <motion.div className="absolute left-[100px] top-[120px] " 
             drag>
                 <Image src={cursor} height="190" width="190" alt="cursor" className="" draggable="false"/>
             </motion.div>
 
-            <motion.div className="absolute right-[180px] top-[00px]" 
+            <motion.div className="absolute right-[180px] top-[120px]" 
             drag>
                 <Image src={lightning} height="100" width="100" alt="message" className="" draggable="false"/>
             </motion.div>
@@ -46,3 +46,7 @@ const Hero = () => {
 }
 
 export default Hero
+
+
+// 2857CE
+// 1BB2ED

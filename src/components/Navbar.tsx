@@ -12,6 +12,10 @@ const Navbar = () => {
 
     const [nav, setNav] = useState(false);
 
+    useEffect(() => {
+        window.history.scrollRestoration = 'manual'
+      }, []);
+
 
     const navLinks = [
         {title: 'About Us', path : '#about'},
@@ -70,10 +74,10 @@ const Navbar = () => {
                             <a href="#contact" className="group">
                                 <h1 className="text-lg font-bold text-white/70 cursor-pointer">Contact Us</h1>
                                 <div className="relative"> 
-                                    <div className="absolute w-2/3 h-1 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-full">
+                                    <div className="absolute w-2/3 h-1 transition-all duration-300 ease-out bg-blue-400 rounded-full group-hover:w-full">
 
                                     </div>
-                                    <div className="mt-1 absolute w-1/3 h-1 transition-all duration-300 ease-out bg-orange-600 rounded-full group-hover:w-full">
+                                    <div className="mt-1 absolute w-1/3 h-1 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-full">
 
                                     </div>
                                 </div>
