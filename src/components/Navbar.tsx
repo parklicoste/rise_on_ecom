@@ -11,8 +11,10 @@ import { AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 const Navbar = () => {
 
     const [nav, setNav] = useState(false);
+   
 
     useEffect(() => {
+
         window.history.scrollRestoration = 'manual'
       }, []);
 
@@ -47,12 +49,13 @@ const Navbar = () => {
             }
         }
     }
-
+// fixed left-0 top-0 w-full z-50 bg-black/70"
 
     return (
         <div className="text-white/70 pt-6">
             
-            <div className="flex">
+            <div className={nav ? "flex":"flex fixed left-0 top-0 z-50 bg-black/60 w-full" }>
+            
                 <div className="flex-none px-4 py-2">
                     <Image
                         src={user} // Path to your image
@@ -85,7 +88,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="px-4 py-10 font-semibold">
+                <div className="hidden md:flex px-4 py-10 font-semibold">
                     <button className="mx-2 px-6 py-2 bg-black-500 border-white/70 rounded-full ">
                         Sign Up!
                     </button>
@@ -95,17 +98,21 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
-            <div onClick={toggleNav} className="md:hidden absolute top-12 right-5 border rounded text-white/70 border-white/70 p-2 z-50">
-                {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30}/>}
+            <div onClick={toggleNav} className="md:hidden fixed top-12 right-5 border rounded text-white/70 border-white/70 p-2 z-50">
+                {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
             </div>
 
             <motion.div 
                 initial={false}
                 animate={nav ? 'open' : 'closed'}
                 variants={menuVariants}
-                className="fixed left-0 top-0 w-full z-40 bg-blck/90 md:hidden"
+                className="fixed left-0 top-0 w-full z-40 bg-black/70 md:hidden"
             >
-                <ul className="text-2xl font-semibold my-28 text-center space-y-2 ">
+                <ul className="text-2xl font-semibold my-10 text-center space-y-2 ">
+                    <li className="hover:text-blue-400"><Link href="#">Login</Link></li>
+                    
+                    <li className="hover:text-blue-400"> <Link href="#">Sign Up!</Link></li>
+                
                     {navLinks.map((link, index) => (
                             <li key={index} className="hover:text-blue-400">
                                 <Link href={link.path}>
@@ -113,6 +120,9 @@ const Navbar = () => {
                                 </Link>
                             </li>
                         ))}
+                    <li className="hover:text-blue-400"> <Link href="#contact">Contact Us</Link></li>
+                    
+                    
                 </ul>
 
 
