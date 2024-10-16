@@ -105,9 +105,9 @@ const Navbar = () => {
                 variants={menuVariants}
                 className="fixed left-0 top-0 w-full z-40 bg-blck/90 md:hidden"
             >
-                <ul className="text-2xl font-semibold my-28 text-center space-y-2">
+                <ul className="text-2xl font-semibold my-28 text-center space-y-2 ">
                     {navLinks.map((link, index) => (
-                            <li key={index}>
+                            <li key={index} className="hover:text-blue-400">
                                 <Link href={link.path}>
                                     {link.title}
                                 </Link>
