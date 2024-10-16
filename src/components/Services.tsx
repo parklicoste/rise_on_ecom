@@ -17,9 +17,9 @@ const Services = () => {
         <h1 className='text-white text-6xl max-w-[320px] font-semibold mx-auto text-center mb-4 p-4'>
             Services
         </h1>
-        <div className='grid grid-cols-8 gap-6 plavce-items-center' >
+        <div className='px-6 md:px-0 grid md:grid-cols-8 gap-6 plavce-items-center' >
 
-            <div className='w-full col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
+            <div className='w-full md:col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
                     <Image src={ecom} alt='book' className='w-auto h-[130px]' />
@@ -30,7 +30,7 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className='w-full col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
+            <div className='w-full md:col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
                 <div className='absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy'></div>
                 <div className='flex flex-row p-6'>
                     <Image src={product} alt='book' className='w-auto h-[130px]' />
@@ -42,7 +42,7 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className='w-full col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
+            <div className='w-full md:col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
                     <Image src={visual} alt='book' className='w-auto h-[130px]' />
@@ -53,7 +53,7 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className='w-full col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
+            <div className='w-full md:col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
                     <Image src={review} alt='book' className='w-auto h-[130px]' />
@@ -64,7 +64,7 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className='w-full col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
+            <div className='w-full md:col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div> 
                 <div className='flex flex-row p-6'>
                     <Image src={inventory} alt='book' className='w-auto h-[130px]' />
@@ -75,7 +75,7 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className='w-full col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
+            <div className='w-full md:col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
                     <Image src={finance} alt='book' className='w-auto h-[130px]' />
@@ -85,7 +85,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
+            <div className='w-full md:col-span-3 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
                     <Image src={social} alt='book' className='w-auto h-[130px]' />
@@ -95,7 +95,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
+            <div className='w-full md:col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-105 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
                     <Image src={website} alt='book' className='w-auto h-[130px]' />
@@ -105,7 +105,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
+            <div className='w-full md:col-span-5 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden hover:scale-110 duration-300'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
                 <div className='flex flex-row p-6'>
                     <Image src={food} alt='book' className='w-auto h-[130px]' />

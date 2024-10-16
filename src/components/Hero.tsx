@@ -21,12 +21,12 @@ const Hero = () => {
                 <h1 className='text-[#fff] text-5xl mt-4'>Simplifying commerce & Scaling beyond limits</h1>
 
             </div>
-            <motion.div className="absolute left-[100px] top-[120px] " 
+            <motion.div className="hidden md:block absolute left-[100px] top-[120px] " 
             drag>
                 <Image src={cursor} height="190" width="190" alt="cursor" className="" draggable="false"/>
             </motion.div>
 
-            <motion.div className="absolute right-[180px] top-[120px]" 
+            <motion.div className="hidden md:block absolute right-[180px] top-[120px]" 
             drag>
                 <Image src={lightning} height="100" width="100" alt="message" className="" draggable="false"/>
             </motion.div>
