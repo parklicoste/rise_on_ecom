@@ -16,7 +16,7 @@ const Hero = () => {
 
         </div>
         <div className='relative'>
-            <div className='text-4xl font-bold text-center'>
+            <div className='text-4xl font-bold text-center pt-4'>
                 <h1 className='text-6xl text-[#fff]'>Rise On Ecom</h1>
                 <h1 className='text-[#fff] text-5xl mt-4'>Simplifying commerce & Scaling beyond limits</h1>
 
