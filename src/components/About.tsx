@@ -4,7 +4,7 @@ import story from '../assets/about-us.jpg'
 
 const About = () => {
   return (
-    <div className='max-w-[1200px] mx-auto' id='about'>
+    <div className='max-w-[1200px] mx-auto pt-[110px]' id='about'>
 
         <h1 className='text-white text-6xl max-w-[320px] font-semibold mx-auto text-center mb-4 p-4'>
             About Us

@@ -1,14 +1,18 @@
 'use client'
 
 import React, {useState, useEffect} from "react";
+import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import user from '../user.png';
+import logo from '../logo.png';
 import { AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 
 
 const Navbar = () => {
+
+    const router = useRouter();
+    const pathname = usePathname();
 
     const [nav, setNav] = useState(false);
    
@@ -27,6 +31,7 @@ const Navbar = () => {
 
     const toggleNav = () => {
         setNav(!nav);
+        console.log(pathname);
     };
 
     const closeNav = () => {
@@ -52,20 +57,20 @@ const Navbar = () => {
 // fixed left-0 top-0 w-full z-50 bg-black/70"
 
     return (
-        <div className="text-white/70 pt-6">
+        <div className="text-white/70 pt-0">
             
             <div className={nav ? "flex":"flex fixed left-0 top-0 z-50 bg-black/60 w-full" }>
             
                 <div className="flex-none px-4 py-2">
-                    <Image
-                        src={user} // Path to your image
-                        alt="Description of image" // Alt text for accessibility
-                        width={100} // Desired width in pixels
-                        height={100} // Desired height in pixels
-                        />
+                    <Image src={logo} alt="Description of image" width={100} height={100} 
+                    onClick={() => {pathname != '/' ? router.push('/', { scroll: true }) : ""}}/>
+                    <Link href="#home"></Link>
                 </div>
                 <div className="hidden md:flex items-center px-4 py-2 mx-auto max-w-[400px]">
-                    <ul className="flex flex-row p-4 space-x-8">
+                    <ul className="flex flex-row p-4 space-x-6">
+                        <li onClick={() => {pathname != '/' ? router.push('/', { scroll: true }) : ""}}>
+                            <Link href="#home">Home</Link>
+                        </li>
                         {navLinks.map((link, index) => (
                             <li key={index}>
                                 <Link href={link.path}>
@@ -89,11 +94,11 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="hidden md:flex px-4 py-10 font-semibold">
-                    <button className="mx-2 px-6 py-2 bg-black-500 border-white/70 rounded-full ">
+                    <button className="mx-2 py-2 bg-black-500 border-white/70 rounded-full ">
                         Sign Up!
                     </button>
 
-                    <button className="mx-2 px-6 py-2 border-white/70 bg-indigo-500 rounded-full">
+                    <button type="button" onClick={() => router.push('/login', { scroll: false })} className="mx-2 px-6  border-white/70 bg-indigo-500 rounded-full">
                         Login
                     </button>
                 </div>
@@ -108,7 +113,7 @@ const Navbar = () => {
                 variants={menuVariants}
                 className="fixed left-0 top-0 w-full z-40 bg-black/70 md:hidden"
             >
-                <ul className="text-2xl font-semibold my-10 text-center space-y-2 ">
+                <ul className={"text-2xl font-semibold my-10 text-center space-y-2 "}>
                     <li className="hover:text-blue-400"><Link href="#">Login</Link></li>
                     
                     <li className="hover:text-blue-400"> <Link href="#">Sign Up!</Link></li>

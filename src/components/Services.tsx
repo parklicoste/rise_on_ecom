@@ -13,7 +13,7 @@ import website from '../assets/website-development.png'
 
 const Services = () => {
   return (
-    <div className='max-w-[1200px] mx-auto' id='services'>
+    <div className='max-w-[1200px] mx-auto pt-[110px]' id='services'>
         <h1 className='text-white text-6xl max-w-[320px] font-semibold mx-auto text-center mb-4 p-4'>
             Services
         </h1>
