@@ -24,6 +24,7 @@ const Navbar = () => {
 
 
     const navLinks = [
+        // {title: 'Home', path: '#home'},
         {title: 'About Us', path : '#about'},
         {title: 'Services', path : '#services'}
     ]
@@ -57,7 +58,7 @@ const Navbar = () => {
 // fixed left-0 top-0 w-full z-50 bg-black/70"
 
     return (
-        <div className="text-white/70 pt-0">
+        <div className="text-white/70 pt-0 shadow">
             
             <div className={nav ? "flex":"flex fixed left-0 top-0 z-50 bg-black/60 w-full" }>
             
@@ -114,9 +115,12 @@ const Navbar = () => {
                 className="fixed left-0 top-0 w-full z-40 bg-black/70 md:hidden"
             >
                 <ul className={"text-2xl font-semibold my-10 text-center space-y-2 "}>
-                    <li className="hover:text-blue-400"><Link href="#">Login</Link></li>
+                    <li className="hover:text-blue-400" onClick={() => router.push('/login', { scroll: false })}>
+                        <Link href="#">Login</Link>
+                    </li>
                     
                     <li className="hover:text-blue-400"> <Link href="#">Sign Up!</Link></li>
+                    <li className="hover:text-blue-400"> <Link href="#home">Home</Link></li>
                 
                     {navLinks.map((link, index) => (
                             <li key={index} className="hover:text-blue-400">
