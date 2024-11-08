@@ -5,7 +5,7 @@ import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import logo from '../logo3.png';
+import logo from '../logo.png';
 import { AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 
 
