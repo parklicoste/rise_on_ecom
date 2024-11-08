@@ -60,7 +60,7 @@ const Navbar = () => {
     return (
         <div className="text-white/70 pt-0 shadow">
             
-            <div className={nav ? "flex":"flex fixed left-0 top-0 z-50 bg-black/60 w-full" }>
+            <div className={nav ? "flex":"flex fixed left-0 top-0 z-50 bg-black w-full" }>
             
                 <div className="flex-none px-4 py-2">
                     <Image src={logo} alt="Description of image" width={100} height={100} 
