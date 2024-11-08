@@ -18,7 +18,7 @@ const Login = () => {
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
           
               
-              <div className={"flex fixed left-0 top-0 z-50 bg-black/60 w-full" }>
+              <div className={"flex fixed left-0 top-0 z-50 bg-white/60 w-full" }>
               
                   <div className="flex-none px-4 py-2 cursor-pointer">
                       <Image src={logo} alt="Description of image" width={100} height={100} 

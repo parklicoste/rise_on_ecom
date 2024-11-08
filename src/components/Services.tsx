@@ -25,7 +25,7 @@ const Services = () => {
                     <Image src={ecom} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Marketplace Registration</h2>
-                        <p className='text-lg text-white/70 mt-2'> We simplify the process of getting your business online by managing registrations on all major e-commerce platforms, including Amazon, Flipkart, Shopify, and more.</p>
+                        {/* <p className='text-lg text-white/70 mt-2'> We simplify the process of getting your business online by managing registrations on all major e-commerce platforms, including Amazon, Flipkart, Shopify, and more.</p> */}
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@ const Services = () => {
                     <Image src={product} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Marketplace Listings</h2>
-                        <p className='text-lg text-white/70 mt-2'> Get your products listed in multiple categories, across all e-commerce channels.</p>
+                        {/* <p className='text-lg text-white/70 mt-2'> Get your products listed in multiple categories, across all e-commerce channels.</p> */}
                     </div>
                     
                 </div>
@@ -48,7 +48,7 @@ const Services = () => {
                     <Image src={visual} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Product Images</h2>
-                        <p className='text-lg text-white/70 mt-2'> High-quality visuals are key to making your products stand out online.</p>
+                        {/* <p className='text-lg text-white/70 mt-2'> High-quality visuals are key to making your products stand out online.</p> */}
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@ const Services = () => {
                     <Image src={finance} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Finances</h2>
-                        <p className='text-lg text-white/70 mt-2'>Navigating financial compliance can be tough, especially for new sellers.</p>
+                        {/* <p className='text-lg text-white/70 mt-2'>Navigating financial compliance can be tough, especially for new sellers.</p> */}
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@ const Services = () => {
                     <Image src={review} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Business Consultancy</h2>
-                        <p className='text-lg text-white/70 mt-2'> Expert guidance is essential for navigating today’s competitive landscape.</p>
+                        {/* <p className='text-lg text-white/70 mt-2'> Expert guidance is essential for navigating today’s competitive landscape.</p> */}
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ const Services = () => {
                     <Image src={social} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Branding & Logo Design</h2>
-                        <p className='text-lg text-white/70 mt-2'> A strong brand identity is crucial to standing out in a crowded marketplace.</p>
+                        {/* <p className='text-lg text-white/70 mt-2'> A strong brand identity is crucial to standing out in a crowded marketplace.</p> */}
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@ const Services = () => {
                     <Image src={inventory} alt='book' className='w-auto h-[130px]' />
                     <div className='flex flex-col mt-4'>
                         <h2 className='text-2xl font-bold text-white/80'>Design and Packaging</h2>
-                        <p className='text-lg text-white/70 mt-2'> Effective packaging and design are essential for making your products memorable and visually impactful.</p>
+                        {/* <p className='text-lg text-white/70 mt-2'> Effective packaging and design are essential for making your products memorable and visually impactful.</p> */}
                     </div>
                 </div>
             </div>

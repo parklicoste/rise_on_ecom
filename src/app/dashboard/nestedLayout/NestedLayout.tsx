@@ -13,7 +13,7 @@ const data = {
       data: [65, 59, 80, 81, 56],
       fill: false,
       borderColor: 'rgb(75, 192, 192)',
-      tension: 0.1,
+      tension: 0,
     },
   ],
 };
@@ -25,7 +25,7 @@ const NestedLayout = () => {
   return (
     <div className="flex pt-8 h-full w-full">
       {/* Left Column */}
-      <div className="w-1/4 bg-white-100 p-4">
+      <div className="w-1/4 bg-white-100 p-10 items-center">
         <h2 className="font-bold mb-4">Options</h2>
         <ul>
           <li className="mb-2">
