@@ -10,6 +10,7 @@
     "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.5",
     "@vercel/postgres": "^0.10.0",
     "bcrypt": "^5.1.1",
     "chart.js": "^4.4.6",

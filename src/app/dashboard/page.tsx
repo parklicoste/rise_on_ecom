@@ -1,23 +1,18 @@
 'use client'
 import React from 'react';
-import { useState } from 'react';
-import { AiOutlineMenu } from 'react-icons/ai';
-import Link from 'next/link';
+import RevenueChart from '../ui/dashboard/revenue-chart';
 
-
-const page = () => {
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+export default async function page() {
 
   return (
-    <div className='text-black relative bg-gray-100'>
-        
-      </div>
-  )
+        <main>
+          <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
+
+          </div>
+          <div className='mt-6 grid grid-cols-1 md:grid-cols-1'>
+            <RevenueChart />
+          </div>
+        </main>
+  );
 }
 
-export default page

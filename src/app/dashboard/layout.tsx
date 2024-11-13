@@ -36,7 +36,7 @@ export default function DashboardLayout({
                 </div>
             </div>
    
-        <div className="flex-grow p-6 md:overflow-auto md:p-12"> {children} </div>
+        <div className="flex-grow p-6 md:p-12"> {children} </div>
       </div>
       </div>
     )
