@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import 'chart.js/auto';
 
 
+
 // data that we will receive from API
 const data = {
   labels: ['January', 'February', 'March', 'April', 'May'],
@@ -21,24 +22,16 @@ const Line = dynamic(() => import('react-chartjs-2').then((mod) => mod.Line), {
   ssr: false,
 });
 
-const NestedLayout = () => {
-  return (
+export default async function MarketPlace({
+    params,
+  }: {
+    params: Promise<{ marketplace: string }>
+  }) {
+    const slug = (await params).marketplace
+    return (
     <div className="flex pt-8 h-full w-full">
       {/* Left Column */}
-      <div className="w-1/4 bg-white-100 p-10 items-center">
-        <h2 className="font-bold mb-4">Options</h2>
-        <ul>
-          <li className="mb-2">
-            <a href="#option1" className="text-blue-500 hover:underline">Flipkart</a>
-          </li>
-          <li className="mb-2">
-            <a href="#option2" className="text-blue-500 hover:underline">Amazon</a>
-          </li>
-          <li className="mb-2">
-            <a href="#option3" className="text-blue-500 hover:underline">Meesho</a>
-          </li>
-        </ul>
-      </div>
+      
 
       {/* Right Column */}
       <div className="w-3/4 p-4 ">
@@ -51,5 +44,3 @@ const NestedLayout = () => {
     </div>
   );
 };
-
-export default NestedLayout;
