@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import RevenueChart from '../ui/dashboard/revenue-chart';
+// import RevenueChart from '../ui/dashboard/revenue-chart';
 
 export default async function page() {
 
@@ -10,7 +10,7 @@ export default async function page() {
 
           </div>
           <div className='mt-6 grid grid-cols-1 md:grid-cols-1'>
-            <RevenueChart />
+            {/* <RevenueChart /> */}
           </div>
         </main>
   );
