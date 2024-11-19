@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Sidebar() {
   return (
@@ -24,6 +25,12 @@ function Sidebar() {
               <a href="#option3" className="text-blue-500 hover:underline">
                 Meesho
               </a>
+            </li>
+            <li className="mb-2">
+              <Link href="/profile" className="text-blue-500 hover:underline">Profile</Link>
+            </li>
+            <li className="mb-2">
+              <Link href="/setting" className="text-blue-500 hover:underline">Setting</Link>
             </li>
           </ul>
         </div>
