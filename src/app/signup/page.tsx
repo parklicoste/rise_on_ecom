@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+
 
 function page() {
   return (
@@ -93,9 +95,11 @@ function page() {
               </button>
               <p className="my-14 text-sm font-light text-white">
                 Already registered?{" "}
+                <Link href="/login">
                 <span className="cursor-pointer font-bold hover:underline">
                   Sign in to your account
                 </span>
+                </Link>
               </p>
             </div>
           </div>

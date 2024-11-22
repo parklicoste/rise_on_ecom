@@ -95,7 +95,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="hidden md:flex px-4 py-10 font-semibold">
-                    <button className="mx-2 py-2 bg-black-500 border-white/70 rounded-full ">
+                    <button className="mx-2 py-2 bg-black-500 border-white/70 rounded-full " onClick={()=>router.push('signup',{scroll:false})}>
                         Sign Up!
                     </button>
 
@@ -119,7 +119,7 @@ const Navbar = () => {
                         <Link href="#">Login</Link>
                     </li>
                     
-                    <li className="hover:text-blue-400"> <Link href="#">Sign Up!</Link></li>
+                    <li className="hover:text-blue-400" onClick={()=>router.push('/signup',{scroll:false})}> <Link href="#">Sign Up!</Link></li>
                     <li className="hover:text-blue-400"> <Link href="#home">Home</Link></li>
                 
                     {navLinks.map((link, index) => (
