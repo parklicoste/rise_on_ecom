@@ -7,6 +7,9 @@ function Sidebar() {
         <div className="w-1/4 p-10 items-center text-lg">
           <h2 className="text-xl font-bold mb-4">Options</h2>
           <ul>
+            <li className="mb-2 w-[4rem]">
+              <a href="/dashboard/allsales" className="text-blue-500 hover:underline">All Sales</a>
+            </li>
             <li className="mb-2 ">
               <a
                 href="/dashboard/[marketplace]"
