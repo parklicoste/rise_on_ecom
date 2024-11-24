@@ -94,14 +94,17 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="hidden md:flex px-4 py-10 font-semibold">
-                    <button className="mx-2 py-2 bg-black-500 border-white/70 rounded-full " onClick={()=>router.push('signup',{scroll:false})}>
+                <div className="hidden md:flex items-center px-4 py-10 font-semibold">
+                    <Link href="/signup">
+                    <button className="mx-2 py-2 bg-black-500 border-white/70 rounded-full " >
                         Sign Up!
                     </button>
-
-                    <button type="button" onClick={() => router.push('/login', { scroll: false })} className="mx-2 px-6  border-white/70 bg-indigo-500 rounded-full">
+                    </Link>
+                    <Link href="/login">
+                    <button type="button" className="mx-2 px-6  border-white/70 bg-indigo-500 rounded-full">
                         Login
                     </button>
+                    </Link>
                 </div>
             </div>
             <div onClick={toggleNav} className="md:hidden fixed top-12 right-5 border rounded text-white/70 border-white/70 p-2 z-50">

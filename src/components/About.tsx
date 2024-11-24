@@ -28,10 +28,10 @@ const About = () => {
                     <div className='flex flex-col'>
                         <h2 className='text-xl font-bold text-white/80'>RiseOnEcom is your trusted partner in transitioning from offline 
                         to online selling, offering end-to-end solutions that simplify the complexities of e-commerce. 
-                        We provide tailor-made services to meet each seller’s 
+                        We provide tailor-made services to meet each seller&apos;s 
                         unique needs, ensuring a hassle-free experience and empowering businesses to thrive in the digital marketplace.</h2>
-                        <p className='text-lg text-white/70 mt-2'> At RiseOnEcom, we’re more than just a service provider "we’re your 
-                        reliable partner in success". From platform registration to product listings, photoshoots to reviews management, 
+                        <p className='text-lg text-white/70 mt-2'> At RiseOnEcom, we&apos;re more than just a service provider &quot;we&apos;re your 
+                        reliable partner in success&quot;. From platform registration to product listings, photoshoots to reviews management, 
                         our expertise ensures smooth onboarding and sustainable growth and most importantly each seller 
                         receives personalised support from a dedicated relationship manager, guiding them every step of the way.
 
