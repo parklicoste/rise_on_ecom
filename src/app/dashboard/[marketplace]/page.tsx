@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import dynamic from "next/dynamic";
 import "chart.js/auto";
@@ -8,7 +9,6 @@ import { CiClock2 } from "react-icons/ci";
 import { CiHardDrive } from "react-icons/ci";
 import { MdPeopleAlt } from "react-icons/md";
 
-// data that we will receive from API
 const data = {
   labels: [
     "January",
@@ -54,52 +54,46 @@ const data = {
 };
 
 const inventoryData = [
-  { header: "collection", figure: 'Rs 1234.56' },
-  { header: "Pending", figure: 'Rs 1634,56.00' },
-  { header: "Total Invoices", figure: '15' },
-  { header: "Total Customers", figure: '12' },
+  { header: "Collection", figure: "Rs 1234.56",icon:CiMoneyBill },
+  { header: "Pending", figure: "Rs 1634,56.00",icon:CiClock2 },
+  { header: "Total Invoices", figure: "15",icon:CiHardDrive },
+  { header: "Total Customers", figure: "12",icon:MdPeopleAlt },
 ];
 
-const icons = [<CiMoneyBill/>, <CiClock2/>, <CiHardDrive/>, <MdPeopleAlt/>];
+// const icons = [CiMoneyBill, CiClock2, CiHardDrive, MdPeopleAlt];
 
 const Bar = dynamic(() => import("react-chartjs-2").then((mod) => mod.Bar), {
   ssr: false,
 });
 
-export default async function MarketPlace({
+export default function MarketPlace({
   params,
 }: {
-  params: Promise<{ marketplace: string }>;
+  params: { marketplace: string };
 }) {
-  const slug = (await params).marketplace;
+  const slug = params.marketplace;
+
   return (
     <div className="flex flex-col pt-8 h-full w-full">
-      {/* Left Column */}
-      {/* Invertory */}
       <div className="w-full">
-        <h1>Invertory</h1>
+        <h1>Inventory</h1>
         <div className="grid lg:grid-cols-4 gap-4 grid-cols-1 md:grid-cols-2">
-          {inventoryData.map((ele, index) => {
-            return (
-              <>
-                <div key={index+"-"+index}>
-                  <InventoryCard
-                    icon={icons[index]}
-                    title={ele.header}
-                    number={ele.figure}
-                  />
-                </div>
-              </>
-            );
-          })}
+          {inventoryData.map((ele, index) => (
+            <div key={index}>
+              <InventoryCard
+                icon={React.createElement(ele.icon)}
+                title={ele.header}
+                number={ele.figure}
+              />
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Right Column */}
       <div className="w-3/4 p-4 ">
         <div id="option1" className="mb-4 p-4 border rounded shadow h-[600px]">
           <h3 className="font-bold">Total Inventory: 100</h3>
-          <p>Total items Sold 50</p>
+          <p>Total items Sold: 50</p>
           <Bar data={data} />
         </div>
       </div>
