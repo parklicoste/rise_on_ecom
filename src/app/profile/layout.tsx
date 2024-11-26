@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Sidebar from "@/components/Sidebar";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function DashboardLayout({
   children,
@@ -11,6 +12,16 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const Router = useRouter();
+  function logoutHandler() {
+    const token = window.sessionStorage.getItem("token");
+    if (!token) {
+      alert("Error");
+      Router.push("/login");
+    }
+    window.sessionStorage.removeItem("token");
+    Router.push("/login");
+  }
 
   return (
     <div className="text-black relative bg-gray-100">
@@ -56,7 +67,7 @@ export default function DashboardLayout({
             </Link>
             <li
               className="cursor-pointer hover:bg-gray-200 p-2 rounded text-red-500"
-              onClick={() => alert("Logout clicked!")}
+              onClick={logoutHandler}
             >
               Logout
             </li>

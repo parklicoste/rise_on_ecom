@@ -1,9 +1,11 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Sidebar from "@/components/Sidebar";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import axios from "axios";
 
 export default function DashboardLayout({
   children,
@@ -11,6 +13,19 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const Router = useRouter();
+  async function logoutHandler() {
+    try {
+      const data = await axios.get("/api/auth/signout")
+      console.log(data)
+      if(data.status == 200 ){
+        Router.push("/login")
+      }
+    } catch (error) {
+      alert("Error")
+      
+    }
+  }
 
   return (
     <div className="text-black relative bg-gray-100">
@@ -41,22 +56,18 @@ export default function DashboardLayout({
         <div className="fixed top-12 right-5 bg-white border rounded shadow-lg p-4 z-50 w-40">
           <ul className="flex flex-col gap-3">
             <Link href="/profile">
-            <li
-              className="cursor-pointer hover:bg-gray-200 p-2 rounded"
-              >
-              Profile
-            </li>
+              <li className="cursor-pointer hover:bg-gray-200 p-2 rounded">
+                Profile
+              </li>
             </Link>
             <Link href="/setting">
-            <li
-              className="cursor-pointer hover:bg-gray-200 p-2 rounded"
-              >
-              Settings
-            </li>
+              <li className="cursor-pointer hover:bg-gray-200 p-2 rounded">
+                Settings
+              </li>
             </Link>
             <li
               className="cursor-pointer hover:bg-gray-200 p-2 rounded text-red-500"
-              onClick={() => alert("Logout clicked!")}
+              onClick={logoutHandler}
             >
               Logout
             </li>
