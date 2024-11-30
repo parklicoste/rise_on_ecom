@@ -54,13 +54,11 @@ const data = {
 };
 
 const inventoryData = [
-  { header: "Collection", figure: "Rs 1234.56",icon:CiMoneyBill },
-  { header: "Pending", figure: "Rs 1634,56.00",icon:CiClock2 },
-  { header: "Total Invoices", figure: "15",icon:CiHardDrive },
-  { header: "Total Customers", figure: "12",icon:MdPeopleAlt },
+  { header: "Collection", figure: "Rs 1234.56", icon: CiMoneyBill },
+  { header: "Pending", figure: "Rs 1634,56.00", icon: CiClock2 },
+  { header: "Total Invoices", figure: "15", icon: CiHardDrive },
+  { header: "Total Customers", figure: "12", icon: MdPeopleAlt },
 ];
-
-// const icons = [CiMoneyBill, CiClock2, CiHardDrive, MdPeopleAlt];
 
 const Bar = dynamic(() => import("react-chartjs-2").then((mod) => mod.Bar), {
   ssr: false,
@@ -74,10 +72,10 @@ export default function MarketPlace({
   const slug = params.marketplace;
 
   return (
-    <div className="flex flex-col pt-8 h-full w-full">
+    <div className="flex flex-col pt-8  w-full">
       <div className="w-full">
         <h1>Inventory</h1>
-        <div className="grid lg:grid-cols-4 gap-4 grid-cols-1 md:grid-cols-2">
+        <div className="relative grid lg:grid-cols-4 gap-5 grid-cols-1 md:grid-cols-2">
           {inventoryData.map((ele, index) => (
             <div key={index}>
               <InventoryCard
@@ -90,11 +88,24 @@ export default function MarketPlace({
         </div>
       </div>
 
-      <div className="w-3/4 p-4 ">
-        <div id="option1" className="mb-4 p-4 border rounded shadow h-[600px]">
-          <h3 className="font-bold">Total Inventory: 100</h3>
-          <p>Total items Sold: 50</p>
-          <Bar data={data} />
+      <div className="w-full mt-3">
+        <div
+          id="option1"
+          className="mb-4 p-4 shadow flex justify-center items-center overflow-y-auto"
+        >
+          <div className="relative w-full h-[500px]  flex-grow overflow-y-hidden">
+            <h3 className="font-bold">Total Inventory: 100</h3>
+            <p>Total items Sold: 50</p>
+            <div className="h-full">
+              <Bar
+                data={data}
+                options={{
+                  responsive: true,
+                  maintainAspectRatio: false, // Ensure the chart scales properly
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
