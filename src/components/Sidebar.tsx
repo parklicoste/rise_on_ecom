@@ -2,7 +2,7 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <div>
+    <div className="hidden lg:block">
       <div className="w-full flex-none md:w-64">
         <div className="w-1/4 p-10 items-center text-lg">
           <h2 className="text-xl font-bold mb-4">Options</h2>

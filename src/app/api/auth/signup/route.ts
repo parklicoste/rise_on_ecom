@@ -7,16 +7,16 @@ export const POST = async (request: NextRequest) => {
   const prisma = new PrismaClient();
 
   try {
-    const { name, email, password } = await request.json();
+    const { fullname, email, password } = await request.json();
 
     // Validate user input data
     const validateUser = z.object({
-      name: z.string().min(5).max(20),
+      fullname: z.string(),
       email: z.string().email().min(5).max(30),
       password: z.string().min(10).max(30),
     });
 
-    const parseUser = validateUser.safeParse({ name, email, password });
+    const parseUser = validateUser.safeParse({ fullname, email, password });
 
     if (!parseUser.success) {
       return NextResponse.json(
@@ -42,7 +42,7 @@ export const POST = async (request: NextRequest) => {
 
     // Create the user
     await prisma.user.create({
-      data: { name, email, password: hashPassword },
+      data: { name:fullname, email, password: hashPassword },
     });
 
     return NextResponse.json(
@@ -50,7 +50,6 @@ export const POST = async (request: NextRequest) => {
       { status: 201 }
     );
   } catch (error: any) {
-    console.error("API Error:", error.message);
     return NextResponse.json(
       { message: "Internal Server Error", details: error.message },
       { status: 500 }
