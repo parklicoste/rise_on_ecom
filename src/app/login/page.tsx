@@ -27,7 +27,7 @@ const Login = () => {
       if (response.status === 200) {
         console.log("Login successful:", response.data);
         // Navigate to the dashboard or target page
-        router.push("/dashboard");
+        router.push("/dashboard/allsales");
       }
     } catch (err: any) {
       // Handle specific errors based on status code

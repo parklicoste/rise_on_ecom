@@ -16,14 +16,13 @@ export default function DashboardLayout({
   const Router = useRouter();
   async function logoutHandler() {
     try {
-      const data = await axios.get("/api/auth/signout")
-      console.log(data)
-      if(data.status == 200 ){
-        Router.push("/login")
+      const data = await axios.get("/api/auth/signout");
+      console.log(data);
+      if (data.status == 200) {
+        Router.push("/login");
       }
     } catch (error) {
-      alert("Error")
-      
+      alert("Error");
     }
   }
 
@@ -55,8 +54,28 @@ export default function DashboardLayout({
       {menuOpen && (
         <div className="fixed top-12 right-5 bg-white border rounded shadow-lg p-4 z-50 w-40">
           <ul className="flex flex-col gap-3">
+            <Link href="/dashboard/allsales">
+              <li className="cursor-pointer hover:bg-gray-200 p-2 rounded flex lg:hidden">
+                All Sales
+              </li>
+            </Link>
+            <Link href="/dashboard/fipkart">
+              <li className="cursor-pointer hover:bg-gray-200 p-2 rounded flex lg:hidden">
+                Flipkart
+              </li>
+            </Link>
+            <Link href="/dashboard/amazon">
+              <li className="cursor-pointer hover:bg-gray-200 p-2 rounded flex lg:hidden">
+                Amazon
+              </li>
+            </Link>
+            <Link href="/dashboard/messho">
+              <li className="cursor-pointer hover:bg-gray-200 p-2 rounded flex lg:hidden">
+                Messho
+              </li>
+            </Link>
             <Link href="/profile">
-              <li className="cursor-pointer hover:bg-gray-200 p-2 rounded">
+              <li className="cursor-pointer hover:bg-gray-200 p-2 rounded lg:mt-[-3rem]">
                 Profile
               </li>
             </Link>
@@ -76,10 +95,9 @@ export default function DashboardLayout({
       )}
 
       {/* Main Layout */}
-      <div className="flex h-screen flex-col md:flex-row md:overflow-hidden bg-gray-100">
+      <div className="flex h-full flex-col md:flex-row md:overflow-hidden   bg-gray-100">
         {/* Sidebar */}
         <Sidebar />
-
         {/* Content Area */}
         <div className="flex-grow p-6 md:p-12">{children}</div>
       </div>
