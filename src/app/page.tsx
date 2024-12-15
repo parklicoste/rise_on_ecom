@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import Partners from "@/components/Partners";
 import { Contact } from "@/components/Contact";
+import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <About />
     <Services />
     <Partners />
+    <Faq/>
     <Contact />
     <Footer />
   </div>  

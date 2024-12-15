@@ -43,3 +43,11 @@ html {
   animation: gardient-xy 1s ease infinite;
   background-size: 200% 200%;
 }
+
+
+@layer utilities {
+  .clip-slant {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  }
+}
