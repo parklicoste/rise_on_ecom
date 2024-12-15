@@ -1,107 +1,76 @@
-import React from 'react'
-import Image from 'next/image'
-import story from '../assets/about-us.jpg'
+import React from "react";
 
 const About = () => {
   return (
-    <div className='max-w-[1200px] mx-auto pt-[110px]' id='about'>
-
-        <h1 className='text-white text-6xl max-w-[320px] font-semibold mx-auto text-center mb-4 p-4'>
-            About Us
-            {/* <span className="text-orange-400">Us</span> */}
-        </h1>
-
-        <div className='px-6 grid md:px-0 md:grid-cols-8 gap-6 plavce-items-center' >
-            <div className='w-full md:col-span-4 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
-                <div className='flex flex-col p-4 h-auto items-center justify-center' >
-                    <Image src={story} alt='' className='w-full h-[440px]' />
-                     
-                </div>
-        
-            </div>
-
-            <div className='w-full md:col-span-4 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
-                <div className='absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy'></div>
-                <div className='flex flex-row p-4'>
-                    
-                    <div className='flex flex-col'>
-                        <h2 className='text-xl font-bold text-white/80'>RiseOnEcom is your trusted partner in transitioning from offline 
-                        to online selling, offering end-to-end solutions that simplify the complexities of e-commerce. 
-                        We provide tailor-made services to meet each seller&apos;s 
-                        unique needs, ensuring a hassle-free experience and empowering businesses to thrive in the digital marketplace.</h2>
-                        <p className='text-lg text-white/70 mt-2'> At RiseOnEcom, we&apos;re more than just a service provider &quot;we&apos;re your 
-                        reliable partner in success&quot;. From platform registration to product listings, photoshoots to reviews management, 
-                        our expertise ensures smooth onboarding and sustainable growth and most importantly each seller 
-                        receives personalised support from a dedicated relationship manager, guiding them every step of the way.
-
-                        While we leverage cutting-edge technology to streamline processes, we remain human-centric, ensuring our clients 
-                        feel supported and understood. Our focus is on helping sellers scale their businesses, whether 
-                        they’re just starting out or looking to optimize their presence.
-                        </p>
-                    </div>
-                </div>  
-            </div>
+    <div className="flex flex-col bg-white py-10 px-4 md:px-10">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+        {/* Image Section */}
+        <div className="flex-shrink-0">
+          <img
+            className="w-full md:w-[40rem] rounded-lg object-cover"
+            src="https://images.pexels.com/photos/8145352/pexels-photo-8145352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="About Us"
+          />
         </div>
-        <h2 className='text-white text-2xl max-w-[320px] font-semibold mx-auto text-center mb-4 p-4'>
-            What sets us apart
-        </h2>
-        <div className='px-4 grid md:px-0 md:grid-cols-10 gap-2 plavce-items-center' >
-            <div className='w-full md:col-span-2 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
-                <div className='flex flex-row p-6'>
-            
-                    <div className='flex flex-col mt-4 h-[180px]'>
-                        <h2 className='text-xl font-bold text-white/80'>Personalized Support</h2>
-                        <p className='text-lg text-white/70 mt-2'> One-on-one attention from a dedicated manager.</p>
-                    </div>
-                </div>
+
+        {/* Text Content Section */}
+        <div className="flex flex-col w-full md:w-1/2">
+          <div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl text-blue-600 font-bold text-center md:text-left">
+              About Us
+            </h1>
+            <p className="mt-6 text-sm sm:text-base md:text-lg text-gray-700 text-justify">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+              unde, eaque incidunt hic ullam nisi quos blanditiis libero
+              perferendis ducimus! Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Nemo unde, eaque incidunt hic ullam nisi quos
+              blanditiis libero perferendis ducimus!
+            </p>
+          </div>
+
+          {/* Highlights Section */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mt-10">
+            {/* Card 1 */}
+            <div className="flex flex-row items-center gap-4 w-full">
+              <div className="flex justify-center items-center w-16 h-16 bg-blue-500 text-white rounded-full">
+                LOGO
+              </div>
+              <div>
+                <h2 className="text-lg font-semibold">Problem Solving</h2>
+                <p className="text-sm text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis ratione quaerat provident est excepturi deserunt
+                  pariatur dignissimos recusandae voluptas.
+                </p>
+              </div>
             </div>
 
-            
-
-            <div className='w-full md:col-span-2 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden h-auto'>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
-                <div className='flex flex-row p-6'>
-                    <div className='flex flex-col mt-4 h-[180px]'>
-                        <h2 className='text-xl font-bold text-white/80'>Comprehensive Solutions</h2>
-                        <p className='text-lg text-white/70 mt-2'> From account setup to inventory management and beyond.</p>
-                    </div>
-                </div>
+            {/* Card 2 */}
+            <div className="flex flex-row items-center gap-4 w-full">
+              <div className="flex justify-center items-center w-16 h-16 bg-blue-500 text-white rounded-full">
+                LOGO
+              </div>
+              <div>
+                <h2 className="text-lg font-semibold">Mission & Vision</h2>
+                <p className="text-sm text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis ratione quaerat provident est excepturi deserunt
+                  pariatur dignissimos recusandae voluptas.
+                </p>
+              </div>
             </div>
+          </div>
 
-            <div className='w-full md:col-span-2 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden '>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
-                <div className='flex flex-row p-6'>
-                    <div className='flex flex-col mt-4 h-[180px]'>
-                        <h2 className='text-xl font-bold text-white/80'>Growth-Focused</h2>
-                        <p className='text-lg text-white/70 mt-2'> We handle registrations on all major e&#8209;commerce platforms for you, hassle-free.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className='w-full md:col-span-2 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
-                <div className='flex flex-row p-6'>
-                    <div className='flex flex-col mt-4 h-[180px]'>
-                        <h2 className='text-xl font-bold text-white/80'>Educational Approach</h2>
-                        <p className='text-lg text-white/70 mt-2'> Providing resources to empower sellers  in mastering e&#8209;commerce.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className='w-full md:col-span-2 relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden'>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-700 to-white opacity-30 animate-gradient-xy"></div>
-                <div className='flex flex-row p-6'>
-                    <div className='flex flex-col mt-4 h-[180px]'>
-                        <h2 className='text-xl font-bold text-white/80'>Reliability & Innovation</h2>
-                        <p className='text-lg text-white/70 mt-2'> We promise transparency, care, and cuttinge&#8209;edge expertise.</p>
-                    </div>
-                </div>
-            </div>
+          {/* Button Section */}
+          <div className="mt-8 flex justify-center md:justify-start">
+            <button className="bg-blue-500 text-white px-6 py-2 text-sm sm:text-base rounded-md hover:bg-blue-600 transition-all">
+              Explore More
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
