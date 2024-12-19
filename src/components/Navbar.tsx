@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Link from "next/link";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -39,9 +40,14 @@ const Navbar = () => {
             <li className="text-black cursor-pointer">Home</li>
             <li className="text-blue-500 cursor-pointer">About Us</li>
             <li className="text-blue-500 cursor-pointer">Service</li>
-            <li className="text-blue-500 cursor-pointer">Pages</li>
             <li className="text-blue-500 cursor-pointer">Blog</li>
             <li className="text-blue-500 cursor-pointer">Contact</li>
+            <Link prefetch  href="/signup">
+            <li className="text-white bg-blue-500 px-3 py-1 cursor-pointer rounded-md">SignUp</li>
+            </Link>
+            <Link prefetch href="/login">
+            <li className="text-white bg-blue-500 px-3 py-1 cursor-pointer rounded-md">SignIn</li>
+            </Link>
           </ul>
 
           {/* Mobile Menu Toggle */}
@@ -60,9 +66,14 @@ const Navbar = () => {
             <li className="py-2 hover:text-blue-300 cursor-pointer">Home</li>
             <li className="py-2 hover:text-blue-300 cursor-pointer">About Us</li>
             <li className="py-2 hover:text-blue-300 cursor-pointer">Service</li>
-            <li className="py-2 hover:text-blue-300 cursor-pointer">Pages</li>
             <li className="py-2 hover:text-blue-300 cursor-pointer">Blog</li>
             <li className="py-2 hover:text-blue-300 cursor-pointer">Contact</li>
+            <Link prefetch href="/signup">
+            <li className="py-2 hover:text-blue-300 cursor-pointer">SignUp</li>
+            </Link>
+            <Link prefetch href="/login">
+            <li className="py-2 hover:text-blue-300 cursor-pointer">SignIn</li>
+            </Link>
           </ul>
         </div>
       </div>
