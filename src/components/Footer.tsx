@@ -42,7 +42,7 @@ function Footer() {
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400">
-                  FAQ's
+                  FAQ&apos;s
                 </a>
               </li>
               <li>
