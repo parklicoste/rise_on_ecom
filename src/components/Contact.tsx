@@ -11,12 +11,12 @@ export const Contact = () => {
         <ul>
             <li className=' flex items-center'>
               <Image src={phone} alt='phone' className='h-[110px] w-auto mr-6' />
-              <p className='text-xl'>+91 9999922543</p>
+              <p className='text-xl'>+91 7676986903</p>
 
             </li>
             <li className=' flex items-center'>
               <Image src={mail} alt='phone' className='h-[110px] w-auto mr-6' />
-              <p className='text-xl'>query@riseonecom.com</p>
+              <p className='text-xl'>contact@riseonecom.in</p>
 
             </li>
 
